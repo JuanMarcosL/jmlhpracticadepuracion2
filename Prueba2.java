@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Prueba2 {
     public static void main(String[] args) {
         // Variables necesarias
@@ -14,22 +16,22 @@ public class Prueba2 {
         do {
             // Comprobamos si el numero es menor
             // que el actual menor
-            if (menor < numeroUsuario) {
+            if (menor > numeroUsuario) { // cambiar el signo por >
                 menor = numeroUsuario;
             }
             // Comprobamos si el numero es mayor
             // que el actual mayor
-            if (mayor > numeroUsuario) {
+            if (mayor < numeroUsuario) { // cambiar el signo por <
                 mayor = numeroUsuario;
             }
             // Suma el numero y lo acumulamos
-            suma = numeroUsuario;
+            suma = suma + numeroUsuario; // agregar suma al número introducido por el usuario
             // Si el numero es positivo, suma a la variable de los positivos
             // y sino a la de los negativos
             if (numeroUsuario >= 0) {
-                sumaPositivos = numeroUsuario;
+                sumaPositivos += numeroUsuario; // se cambia el signo =
             } else {
-                sumaNegativos = numeroUsuario;
+                sumaNegativos += numeroUsuario; // Se cambia el signo =
             }
             // aumento el contador
             contador++;
